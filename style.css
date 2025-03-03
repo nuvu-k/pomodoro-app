@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&family=Lora:wght@400;600&display=swap');
+*{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color: #3D405B;  /* Slate Blue for text - readable and subtle */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-20deg, #F5E8DD 0%, #A1B5D8 100%); /* Soft Peach to Muted Blue */
+    background-size: cover;
+}
+
+h1{
+    font-size: 28px;
+    margin-bottom:15px;
+    color:#3D405B;
+}
+
+p{
+    margin: 0;
+}
+
+
+
+.app-message{
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.app-circle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+
+.circle-shape{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.semi-circle{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 6px;
+}
+
+.left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: none;
+    z-index: 1;
+}
+  
+.right-side {
+    top: 0;
+    left: 100px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: none;
+}
+
+.circle {
+    border-color: #A1B5D8; /* Soft Coral for a warm, subtle highlight */
+}
+
+.circle-mask {
+    border-color: #A1B5D8; /* Muted Blue for a calming contrast */
+}
+
+.app-counter-box {
+    font-size: 250%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3D405B;  /* Slate Blue for better contrast and readability */
+}
+
+.button-container{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+button {
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #6D8B74;  /* Earthy Green for a calm, focused vibe */
+    transition: color 0.3s ease-in-out;
+}
+
+button:hover {
+    color: #F07167;  /* Soft Coral for a warm, engaging effect */
+}
+
+
+  
